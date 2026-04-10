@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <title>Contact Purrfect Vibes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a>
+                        <ul class="sub-menu">
+                            <li><a href="features.html#cat-care">Cat Care</a></li>
+                            <li><a href="features.html#quizzes">Quizzes</a></li>
+                            <li><a href="features.html#community">Community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="button">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="navToggler" class="navTogglerMenu" name="navToggler">
+                <img src="images/menu.svg" class="menuOpen" alt="menu">
+                <img src="images/x.svg" class="menuClose" alt="close">
+            </label>
+        </div>
+    </header>
+    <section class="container">
+    <div class="fr-space">
+        <div><br><br>
+        <address>
+            Purrfect Vibes HQ<br>
+            123 Whisker Lane<br>
+            Meowtown, CA 90210<br>
+            (555) 867-5309
+        </address><br> 
+        </div>
+        <div>
+            <div>
+            <h2>Contact Us</h2>
+            </div>  
+            <br>
+            <form action="contactus.php" method="post" name="contact" target="_blank">
+                <p><em>Note: Fields highlighted in Red are required</em></p> 
+            <div class="catForm">
+                <div>
+                    <label class="fat">First Name</label>
+                    <input type="text" autofocus size="30" placeholder="First name" name="fname" required>
+                </div>
+                <div>
+                    <label class="fat">Last Name</label>
+                    <input type="text" size="30" placeholder="Last name" name="lname" required><br>
+                </div>   
+                <div>
+                    <label class="fat">Organization (if any)</label>
+                    <input type="text" size="30" placeholder="Organization" name="org">
+                </div>
+                <div>    
+                    <label class="fat">Phone Number</label>
+                    <input type="tel" size="30" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555" name="phone" required><br>
+                </div> 
+                <div>   
+                    <label class="fat">Email Address</label>
+                    <input type="email" size="30" placeholder="example@domain.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+    " name="email" required><br>
+                </div>     
+                <fieldset>
+                    <div class="infield full" > 
+                    <legend class="fat" name="interest">Feline Interests:</legend><br>
+                    <input type="checkbox" name="cat1" value="intrest1">Cat Wellness<br>
+                    <input type="checkbox" name="cat2" value="intrest2">Cat Training<br>
+                    <input type="checkbox" name="cat3" value="intrest3">Cat Adoption<br>
+                    </div>
+                <!-- </fieldset> -->
+                <div class="infield full" name="lifestyle">
+                    <legend class="fat">Your Cat's Lifestyle:</legend><br>
+                    <input type="radio" name="life1" value="in1">Indoor Cat<br>
+                    <input type="radio" name="life2" value="out2">Outdoor Cat<br>
+                    <input type="radio" name="life3" value="both3">Both<br> 
+                </div><br>
+                </fieldset>
+                <div>
+                    <label class="fat">How many cats do you have?</label><br>
+                    <select name="numCats" class="full">
+                        <option value="none">none</option>
+                        <option value="onetotwo">1-2</option>
+                        <option value="threetofour">3-4</option>
+                        <option value="fiveplus">5+</option>
+                    </select><br>
+                </div>  
+                <div> 
+                    <label class="fat">How did you hear about Purrfect Vibes?</label><br> 
+                    <select name="howHeard" multiple size="2" class="full">
+                        <option value="social">Social Media</option>
+                        <option value="friendFam">Friend/Family</option>
+                        <option value="search">Internet Search</option>
+                        <option value="event">Event or Conference</option>
+                    </select><br>
+                </div> 
+                <div>
+                    <label class="fat">Questions or Purrs?</label><br>   
+                    <textarea rows="5" cols="65" placeholder="Share your thoughts with us!" name="comment"></textarea><br>
+                </div>
+                <input type="submit" value="SUBMIT TO PURFECT VIBES">
+            </div> 
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>     
+    </section>
+    <footer>
+        <div>
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+        </div>
+        <p>
+            Contact Us<br>
+            Purrfect Vibes<br>
+            123 Whisker Lane<br>
+            Catopia City, CA 90210<br>
+            Tel. (800) PURR-VIBES (800-787-7842)<br>
+        </p>
+    </footer>
+</body>
+</html>
