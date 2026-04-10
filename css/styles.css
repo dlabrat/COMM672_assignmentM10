@@ -422,7 +422,7 @@ address {
 input[type="submit"] {
     background-color: transparent;
     border: 1px solid #bbb;
-    padding: 10px 30px;
+    padding: 10px 10px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 11px;
